@@ -1,16 +1,15 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import { players } from '../Data'
 import Contestants from '../components/contestants'
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
 
-export default class Mainpage extends Component {
+export default function Mainpage() {
 
-  
-  render() {
     console.log(players)
-    const contestants = players.map((player,index) => {
+    const [characters, updateCharacters] = useState(players)
+    const contestants = characters.map((player,index) => {
       return (
-      <Draggable key={player.id} draggableId={player.id.toString()} index={index-1}>
+      <Draggable key={player.id} draggableId={player.id.toString()} index={index}>
         {(provided) => (
           <Contestants
           provided={provided}
@@ -28,6 +27,16 @@ export default class Mainpage extends Component {
       </Draggable>
       )}
     )
+
+    function handleOnDragEnd(result) {
+      if(!result.destination) return
+
+      const items = Array.from(characters)
+      const [reorderedItem] = items.splice(result.source.index, 1)
+      items.splice(result.destination.index, 0, reorderedItem)
+
+      updateCharacters(items)
+    }
 console.log(contestants)
 //needs to be a table. slot/contestant/action(drop/replace)/score
 //first section is starters. need a separate table on db to save starters?
@@ -39,7 +48,7 @@ console.log(contestants)
         Mainpage
         <h2> Starters </h2>
         <table>
-          <DragDropContext>
+          <DragDropContext onDragEnd={handleOnDragEnd}>
             <Droppable droppableId="contestants">
               {(provided) => (
                 <tbody className="contestants"
@@ -61,6 +70,7 @@ console.log(contestants)
                     </th>
                   </tr>
                   {contestants}
+                  {provided.placeholder}
                 </tbody>
             )}
             </Droppable>
@@ -90,5 +100,5 @@ console.log(contestants)
         </table>
       </div>
     )
-  }
+
 }
