@@ -5,22 +5,16 @@ import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
 
 export default function Mainpage() {
 
-    console.log(players)
     const [characters, updateCharacters] = useState(players)
     const contestants = characters.map((player,index) => {
       return (
       <Draggable key={player.id} draggableId={player.id.toString()} index={index}>
         {(provided) => (
           <Contestants
-          provided={provided}
-          // innerRef={provided.innerRef}
-          // draggable={provided.DraggableProps}
-          // dragHandle={provided.dragHandleProps}
-          // {...provided.draggableProps}
-          // {...provided.dragHandleProps} 
-          id={player.id}
-          name={player.firstName}
-          score={player.score.week2}
+            provided={provided}
+            id={player.id}
+            name={player.firstName}
+            score={player.score.week2}
           />
         )}
       
@@ -37,7 +31,7 @@ export default function Mainpage() {
 
       updateCharacters(items)
     }
-console.log(contestants)
+
 //needs to be a table. slot/contestant/action(drop/replace)/score
 //first section is starters. need a separate table on db to save starters?
 //second section is available contestants. this can be full list on db, and made
@@ -46,6 +40,9 @@ console.log(contestants)
     return (
       <div>
         Mainpage
+        <h1>Week 1</h1>
+        <h2>Overall Pick</h2>
+        Connor Brennan
         <h2> Starters </h2>
         <table>
           <DragDropContext onDragEnd={handleOnDragEnd}>

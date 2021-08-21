@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import './App.css';
 import Home from './pages/Home'
 import Mainpage from './pages/Main-page'
+import Scoring from './pages/Scoring-page'
 
 export default class App extends Component {
 
@@ -22,6 +23,11 @@ export default class App extends Component {
             exact
             path="/main"
             component={Mainpage}
+          />
+          <Route
+            exact
+            path="/scoring"
+            component={Scoring}
           />
         </Switch>
       </div>
