@@ -4,6 +4,7 @@ import './App.css';
 import Home from './pages/Home'
 import Mainpage from './pages/Main-page'
 import Scoring from './pages/Scoring-page'
+import Standings from './pages/Standings-page'
 
 export default class App extends Component {
 
@@ -28,6 +29,11 @@ export default class App extends Component {
             exact
             path="/scoring"
             component={Scoring}
+          />
+          <Route
+            exact
+            path="/standings"
+            component={Standings}
           />
         </Switch>
       </div>

@@ -140,3 +140,30 @@ export const players = [
     }
   } 
 ]
+
+export const teams = [
+  {
+    id: 1,
+    owner: "Mara Baltazar",
+    teamName: "Hello world",
+    totalScore: 345,
+  },
+  {
+    id: 2,
+    owner: "Trevor Zink",
+    teamName: "Goodbye world",
+    totalScore: 350,
+  },
+  {
+    id: 3,
+    owner: "Juan Baltazar",
+    teamName: "Happy world",
+    totalScore: 365,
+  },
+  {
+    id: 4,
+    owner: "Paloma Baltazar",
+    teamName: "Cruel world",
+    totalScore: 325,
+  }
+]
