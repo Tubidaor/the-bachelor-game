@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Mainpage from './pages/Main-page'
 import Scoring from './pages/Scoring-page'
 import Standings from './pages/Standings-page'
+import Admin from './pages/Administrative-page'
 
 export default class App extends Component {
 
@@ -34,6 +35,11 @@ export default class App extends Component {
             exact
             path="/standings"
             component={Standings}
+          />
+          <Route
+            exact
+            path="/Admin"
+            component={Admin}
           />
         </Switch>
       </div>
