@@ -41,7 +41,7 @@ export default class Admin extends Component {
             {contestant.lastName}
           </span>
         </div>
-        <div className="admin-contestant-categories">
+        <div className="admin-contestant-checkboxes">
           <label for={`${contestant.id}-bachelor-ett-proposes`}>
             <input
               type="checkbox"
@@ -206,153 +206,152 @@ export default class Admin extends Component {
         <h2>week 1</h2>
         <div>
           Legend
-          <ul>
-            <li>
+          <ul className="legend-ul">
+            <li className="legend-li">
               Bachelor-ett Proposes (BPS)
             </li>
-            <li>
+            <li className="legend-li">
               Confirmed Sex (SEX)
             </li>
-            <li>
-              
+            <li className="legend-li">
+              Bachelor-ett Says I Love You (BILY)
             </li>
-            <li>
-            
+            <li className="legend-li">
+              Physical Altercation (PALT)
             </li>
-            <li>
-              
+            <li className="legend-li">
+              One on One Date (OOOD)
             </li>
-            <li>
-            
+            <li className="legend-li">
+              Receives a Rose Pre-ceremony (RPRC)
             </li>
-            <li>
-              
+            <li className="legend-li">
+              Destroys Property (DPRP)
             </li>
-            <li>
-              
+            <li className="legend-li">
+              Receives a Rose (RRSE)
             </li>
-            <li>
-              
+            <li className="legend-li">
+              Interrupts Alone Time (IATM)
             </li>
-            <li>
-              
+            <li className="legend-li">
+              DRUNK (DRK)
             </li>
-            <li>
-              
+            <li className="legend-li">
+              Discusses Another Contestant (DAC)
             </li>
-            <li>
-              
+            <li className="legend-li">
+              Group Date (GDT)
             </li>
-            <li>
-              
+            <li className="legend-li">
+              Bachelor-ett says "I can see myself with them" (ICSM)
             </li>
-            <li>
-              
+            <li className="legend-li">
+              Refers to Sexual Anatomy (SEXA)
             </li>
-            <li>
-              
+            <li className="legend-li">
+              Group Setting 1 on 1 (GOOO)
             </li>
-            <li>
-              
+            <li className="legend-li">
+              Parent Take Home Category 1 (PTCO)
             </li>
-            <li>
-              
+            <li className="legend-li">
+            Parent Take Home Category 2 (PTCT)
             </li>
-            <li>
-              
+            <li className="legend-li">
+              Cries in Limo (CIL)
             </li>
-            <li>
-              
+            <li className="legend-li">
+              Fights With Bachelor-ett (FWBH)
             </li>
-            <li>
-              
+            <li className="legend-li">
+              Is Too Sensitive (ITS)
             </li>
-            <li>
-              
+            <li className="legend-li">
+              Contestant Says "I Love You" first (CSIY)
             </li>
-            <li>
-              
-            </li>
-
+            <li className="legend-li">
+              Leaves Outside of Rose Ceremony (LORC) 
+            </li> 
           </ul>
         </div>
+
         <ul>
-        <li className="admin-contestant-li">
-        <div className="admin-contestant-name">
-          <span>
-           Contestants
-          </span>
-        </div>
-        <div className="admin-contestant-categories">
-          <div className="category-column-label">
-
-          </div>
-          <label for={`-sex-confirmed`}>
-  
-          </label>
-          <label for={`-bachelor-ett-says-iloveyou`}>
-    
-          </label>
-          <label for={`-physical-altercation`}>
-
-  
-          </label>
-          <label for={`-oneonone-date`}>
-    
-          </label>
-          <label for={`-pre-ceremony-rose`}>
-      
-          </label>
-          <label for={`-destroys-property`}>
-    
-          </label>
-          <label for={`-Rose`}>
-    
-          </label>
-          <label for={`-interrupts-alone-time`}>
-    
-          </label>
-          <label for={`-drunk`}>
-    
-          </label>
-          <label for={`-talks-about-contestant`}>
-  
-          </label>
-          <label for={`-group-date`}>
-  
-          </label>
-          <label for={`-bachelor-ett-could-see-themselves-with-contestant`}>
-  
-          </label>
-          <label for={`-refers-to-sexual-anatomy`}>
- 
-          </label>
-          <label for={`-oneonone-time-group`}>
-  
-          </label>
-          <label for={`-parent-take-home-category-one`}>
-
-          </label>
-          <label for={`-parent-take-home-category-two`}>
-
-          </label>
-          <label for={`-cries-in-limo`}>
- 
-          </label>
-          <label for={`-fights-with-bachelor-ett`}>
-    
-          </label>
-          <label for={`-is-too-sensitive`}>
-  
-          </label>
-          <label for={`-says-iloveyou`}>
-
-          </label>
-          <label for={`-leave-outside-rose-ceremony`}>
-
-          </label>
-        </div>
-        </li>
+          <li className="admin-contestant-li">
+            <div className="admin-contestant-name">
+              <span>
+                Contestants
+              </span>
+            </div>
+            <div className="admin-contestant-categories">
+              <span className="category-column-label">
+                BPS
+              </span>
+              <span className="category-column-label">
+                SEX
+              </span>
+              <span className="category-column-label">
+                BILY
+              </span>
+              <span className="category-column-label">
+                PATL
+              </span>
+              <span className="category-column-label">
+                OOOD
+              </span>
+              <span className="category-column-label">
+                RPRC
+              </span>
+              <span className="category-column-label">
+                DPRP
+              </span>
+              <span className="category-column-label">
+                RRSE
+              </span>
+              <span className="category-column-label">
+                IATM
+              </span>
+              <span className="category-column-label">
+                DRK
+              </span>
+              <span className="category-column-label">
+                DAC
+              </span>
+              <span className="category-column-label">
+                GDT
+              </span>
+              <span className="category-column-label">
+                ICSM
+              </span>
+              <span className="category-column-label">
+                SEXA
+              </span>
+              <span className="category-column-label">
+                GOOO
+              </span>
+              <span className="category-column-label">
+                PTCO
+              </span>
+              <span className="category-column-label">
+                PTCT
+              </span>
+              <span className="category-column-label">
+                CIL
+              </span>
+              <span className="category-column-label">
+                FWBH
+              </span>
+              <span className="category-column-label">
+                ITS
+              </span>
+              <span className="category-column-label">
+                CSIY
+              </span>
+              <span className="category-column-label">
+                LORC
+              </span>
+            </div>
+          </li>
           {loadContestants}
         </ul>
       </div>

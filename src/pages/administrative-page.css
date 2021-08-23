@@ -3,3 +3,31 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.legend-li {
+  list-style: none;
+}
+.legend-ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.category-column-label {
+  /* margin: 2.7px;
+  text-align: center; */
+  display: block;
+}
+.admin-contestant-categories {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 90%;
+}
+.admin-contestant-checkboxes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 90%;
+}
+input[type=checkbox] {
+  /* margin: 0px 15px 0px 15px; */
+}
