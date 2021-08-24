@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import './App.css';
+import Nav from './components/navigation'
 import Home from './pages/Home'
 import Mainpage from './pages/Main-page'
 import Scoring from './pages/Scoring-page'
@@ -13,6 +14,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+          <Nav/>
         </header>
         <h2>The Bachelor(ett) game </h2>
         <Switch>
@@ -38,7 +40,7 @@ export default class App extends Component {
           />
           <Route
             exact
-            path="/Admin"
+            path="/admin"
             component={Admin}
           />
         </Switch>
