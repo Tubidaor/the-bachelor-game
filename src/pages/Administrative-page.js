@@ -214,25 +214,25 @@ export default class Admin extends Component {
               Confirmed Sex (SEX)
             </li>
             <li className="legend-li">
-              Bachelor-ett Says I Love You (BILY)
+              Bachelor-ett Says I Love You (BLY)
             </li>
             <li className="legend-li">
-              Physical Altercation (PALT)
+              Physical Altercation (PAL)
             </li>
             <li className="legend-li">
-              One on One Date (OOOD)
+              One on One Date (OOO)
             </li>
             <li className="legend-li">
-              Receives a Rose Pre-ceremony (RPRC)
+              Receives a Rose Pre-ceremony (PCR)
             </li>
             <li className="legend-li">
-              Destroys Property (DPRP)
+              Destroys Property (DPR)
             </li>
             <li className="legend-li">
-              Receives a Rose (RRSE)
+              Receives a Rose (RRS)
             </li>
             <li className="legend-li">
-              Interrupts Alone Time (IATM)
+              Interrupts Alone Time (IAT)
             </li>
             <li className="legend-li">
               DRUNK (DRK)
@@ -244,34 +244,34 @@ export default class Admin extends Component {
               Group Date (GDT)
             </li>
             <li className="legend-li">
-              Bachelor-ett says "I can see myself with them" (ICSM)
+              Bachelor-ett says "I can see myself with them" (ISM)
             </li>
             <li className="legend-li">
-              Refers to Sexual Anatomy (SEXA)
+              Refers to Sexual Anatomy (SXA)
             </li>
             <li className="legend-li">
-              Group Setting 1 on 1 (GOOO)
+              Group Setting 1 on 1 (GOO)
             </li>
             <li className="legend-li">
-              Parent Take Home Category 1 (PTCO)
+              Parent Take Home Category 1 (PTO)
             </li>
             <li className="legend-li">
-            Parent Take Home Category 2 (PTCT)
+            Parent Take Home Category 2 (PTT)
             </li>
             <li className="legend-li">
               Cries in Limo (CIL)
             </li>
             <li className="legend-li">
-              Fights With Bachelor-ett (FWBH)
+              Fights With Bachelor-ett (FWB)
             </li>
             <li className="legend-li">
               Is Too Sensitive (ITS)
             </li>
             <li className="legend-li">
-              Contestant Says "I Love You" first (CSIY)
+              Contestant Says "I Love You" first (SIY)
             </li>
             <li className="legend-li">
-              Leaves Outside of Rose Ceremony (LORC) 
+              Leaves Outside of Rose Ceremony (LOR) 
             </li> 
           </ul>
         </div>
@@ -291,25 +291,25 @@ export default class Admin extends Component {
                 SEX
               </span>
               <span className="category-column-label">
-                BILY
+                BLY
               </span>
               <span className="category-column-label">
-                PATL
+                PAL
               </span>
               <span className="category-column-label">
-                OOOD
+                OOO
               </span>
               <span className="category-column-label">
-                RPRC
+                PCR
               </span>
               <span className="category-column-label">
-                DPRP
+                DPR
               </span>
               <span className="category-column-label">
-                RRSE
+                RRS
               </span>
               <span className="category-column-label">
-                IATM
+                IAT
               </span>
               <span className="category-column-label">
                 DRK
@@ -321,34 +321,34 @@ export default class Admin extends Component {
                 GDT
               </span>
               <span className="category-column-label">
-                ICSM
+                ISM
               </span>
               <span className="category-column-label">
-                SEXA
+                SXA
               </span>
               <span className="category-column-label">
-                GOOO
+                GOO
               </span>
               <span className="category-column-label">
-                PTCO
+                PTO
               </span>
               <span className="category-column-label">
-                PTCT
+                PTT
               </span>
               <span className="category-column-label">
                 CIL
               </span>
               <span className="category-column-label">
-                FWBH
+                FWB
               </span>
               <span className="category-column-label">
                 ITS
               </span>
               <span className="category-column-label">
-                CSIY
+                SIY
               </span>
               <span className="category-column-label">
-                LORC
+                LOR
               </span>
             </div>
           </li>

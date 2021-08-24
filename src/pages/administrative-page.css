@@ -16,11 +16,18 @@
   text-align: center; */
   display: block;
 }
+.admin-contestant-name {
+  width: 200px;
+}
 .admin-contestant-categories {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   width: 90%;
+}
+.category-column-label {
+  width: 35px;
+  text-align: center
 }
 .admin-contestant-checkboxes {
   display: flex;
@@ -30,4 +37,5 @@
 }
 input[type=checkbox] {
   /* margin: 0px 15px 0px 15px; */
+  width: 35px;
 }
